@@ -1,0 +1,4 @@
+---
+- hosts: seed-hosts[0]
+
+- import_playbook: apicurio.yml

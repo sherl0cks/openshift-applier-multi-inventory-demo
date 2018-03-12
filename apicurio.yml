@@ -1,0 +1,9 @@
+---
+- hosts: seed-hosts[0]
+  vars:
+    filter_tags: projects
+    inventory_dir: roles/openshift-apicurio/.openshift-applier/inventory
+  pre_tasks:
+  - include_vars: roles/openshift-apicurio/.openshift-applier/inventory/group_vars/all.yml
+  roles:
+    - casl-ansible/roles/openshift-applier

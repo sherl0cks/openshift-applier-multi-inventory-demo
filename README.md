@@ -1,0 +1,3 @@
+A simple demo to show it's possible to orchestrate multiple openshfit-applier inventories without extending openshift-applier.
+
+`ansible-playbook -i inventory/ run.yml`
